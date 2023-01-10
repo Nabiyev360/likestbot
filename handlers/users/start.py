@@ -7,6 +7,7 @@ from utils.db_api.dbxl import set_language
 @dp.message_handler(CommandStart())
 async def bot_start(message: types.Message):
     await message.answer(f"Assalomu alaykum {message.from_user.full_name}!\nPost tagiga like qo'yish uchun avval postni yuboring💁‍♂️")
+    print(message.chat.id)
     
     
 @dp.message_handler(commands=['uz'])

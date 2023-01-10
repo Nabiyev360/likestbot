@@ -1,0 +1,126 @@
+executor.py [LINE:362] #INFO     [2022-12-09 10:26:18,459]  Bot: Like Bot [@LikestBot]
+dispatcher.py [LINE:358] #INFO     [2022-12-09 10:26:18,674]  Start polling.
+executor.py [LINE:362] #INFO     [2022-12-09 10:27:49,787]  Bot: Like Bot [@LikestBot]
+dispatcher.py [LINE:358] #INFO     [2022-12-09 10:27:50,061]  Start polling.
+error_handler.py [LINE:49] #ERROR    [2022-12-09 11:40:17,362]  TelegramAPIError: Can't parse inline query result: can't find field "photo_file_id" 
+Update: {"update_id": 706798805, "inline_query": {"id": "8749030367523521589", "from": {"id": 2037042371, "is_bot": false, "first_name": "Maftuna Abdushukurova", "language_code": "ru"}, "chat_type": "private", "query": "", "offset": ""}}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 273, in process_update
+    return await self.inline_query_handlers.notify(update.inline_query)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/ubuntu/likestbot/handlers/users/inlineMode.py", line 16, in share
+    await query.answer(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/types/inline_query.py", line 61, in answer
+    return await self.bot.answer_inline_query(self.id,
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/bot.py", line 3515, in answer_inline_query
+    return await self.request(api.Methods.ANSWER_INLINE_QUERY, payload)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline query result: can't find field "photo_file_id"
+executor.py [LINE:362] #INFO     [2022-12-09 11:53:32,208]  Bot: Like Bot [@LikestBot]
+dispatcher.py [LINE:358] #INFO     [2022-12-09 11:53:32,421]  Start polling.
+executor.py [LINE:362] #INFO     [2022-12-10 07:28:18,357]  Bot: Like Bot [@LikestBot]
+dispatcher.py [LINE:358] #INFO     [2022-12-10 07:28:18,561]  Start polling.
+executor.py [LINE:362] #INFO     [2022-12-10 07:40:56,453]  Bot: Like Bot [@LikestBot]
+dispatcher.py [LINE:358] #INFO     [2022-12-10 07:40:56,680]  Start polling.
+error_handler.py [LINE:49] #ERROR    [2022-12-11 07:12:20,026]  TelegramAPIError: Can't parse inline query result: can't find field "photo_file_id" 
+Update: {"update_id": 706799215, "inline_query": {"id": "5166245997854336410", "from": {"id": 5497827676, "is_bot": false, "first_name": "NURMUHAMMAD", "username": "sharobiddinov", "language_code": "uz"}, "chat_type": "private", "query": "AQAD5bYxG7z6yEp4555", "offset": ""}}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 273, in process_update
+    return await self.inline_query_handlers.notify(update.inline_query)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/ubuntu/likestbot/handlers/users/inlineMode.py", line 16, in share
+    await query.answer(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/types/inline_query.py", line 61, in answer
+    return await self.bot.answer_inline_query(self.id,
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/bot.py", line 3515, in answer_inline_query
+    return await self.request(api.Methods.ANSWER_INLINE_QUERY, payload)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline query result: can't find field "photo_file_id"
+error_handler.py [LINE:49] #ERROR    [2022-12-11 07:12:28,872]  TelegramAPIError: Can't parse inline query result: can't find field "photo_file_id" 
+Update: {"update_id": 706799216, "inline_query": {"id": "5166245996887099889", "from": {"id": 5497827676, "is_bot": false, "first_name": "NURMUHAMMAD", "username": "sharobiddinov", "language_code": "uz"}, "chat_type": "private", "query": "", "offset": ""}}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 273, in process_update
+    return await self.inline_query_handlers.notify(update.inline_query)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/ubuntu/likestbot/handlers/users/inlineMode.py", line 16, in share
+    await query.answer(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/types/inline_query.py", line 61, in answer
+    return await self.bot.answer_inline_query(self.id,
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/bot.py", line 3515, in answer_inline_query
+    return await self.request(api.Methods.ANSWER_INLINE_QUERY, payload)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline query result: can't find field "photo_file_id"
+error_handler.py [LINE:49] #ERROR    [2022-12-12 15:14:58,489]  TelegramAPIError: Aiohttp client throws an error: ServerDisconnectedError: Server disconnected 
+Update: {"update_id": 706799686, "callback_query": {"id": "1550089494328433765", "from": {"id": 360908334, "is_bot": false, "first_name": "𝓜𝓾𝔁𝓵𝓲𝓼𝓪❤️", "language_code": "ru"}, "message": {"message_id": 10824, "sender_chat": {"id": -1001409762352, "title": "Yangihayot tumani hokimligi Matbuot xizmati/Пресс-служба хокимията Янгихаётского района", "username": "yangihayot_hokimligi", "type": "channel"}, "chat": {"id": -1001409762352, "title": "Yangihayot tumani hokimligi Matbuot xizmati/Пресс-служба хокимията Янгихаётского района", "username": "yangihayot_hokimligi", "type": "channel"}, "date": 1670641331, "edit_date": 1670857765, "photo": [{"file_id": "AgACAgIAAx0EVAdEMAACKkhjl0QkVMxfAaPXml11TRZXTxPr1AACHMExGxZsoEjGfKY2lYB-SAEAAwIAA3MAAysE", "file_unique_id": "AQADHMExGxZsoEh4", "file_size": 1309, "width": 40, "height": 90}, {"file_id": "AgACAgIAAx0EVAdEMAACKkhjl0QkVMxfAaPXml11TRZXTxPr1AACHMExGxZsoEjGfKY2lYB-SAEAAwIAA20AAysE", "file_unique_id": "AQADHMExGxZsoEhy", "file_size": 19535, "width": 144, "height": 320}, {"file_id": "AgACAgIAAx0EVAdEMAACKkhjl0QkVMxfAaPXml11TRZXTxPr1AACHMExGxZsoEjGfKY2lYB-SAEAAwIAA3gAAysE", "file_unique_id": "AQADHMExGxZsoEh9", "file_size": 94850, "width": 361, "height": 800}, {"file_id": "AgACAgIAAx0EVAdEMAACKkhjl0QkVMxfAaPXml11TRZXTxPr1AACHMExGxZsoEjGfKY2lYB-SAEAAwIAA3kAAysE", "file_unique_id": "AQADHMExGxZsoEh-", "file_size": 186086, "width": 577, "height": 1280}], "caption": "#tanlov\n#Yangihayotda_Yangi_yil\n\n📸Кун фотоси/Фото дня\n\n🥳 Танловимиз шартларига мос илк фото. \n\n👍Сиз ҳам танловда иштирок этмоқчимисиз? Унда шошилинг. \n\n😊 Кўпроқ лайк йиғиб, ғолиблардан бирига айланинг", "caption_entities": [{"type": "hashtag", "offset": 0, "length": 7}, {"type": "hashtag", "offset": 8, "length": 23}, {"type": "bold", "offset": 33, "length": 21}, {"type": "bold", "offset": 155, "length": 49}], "reply_markup": {"inline_keyboard": [[{"text": "👍 114", "callback_data": "like_AQADHMExGxZsoEh4927"}], [{"text": "Ulashish", "url": "tg://msg/url?url=https://t.me/yangihayot_hokimligi"}]]}}, "chat_instance": "5321146379513719301", "data": "like_AQADHMExGxZsoEh4927"}}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/client.py", line 560, in _request
+    await resp.start(conn)
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/client_reqrep.py", line 899, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/ubuntu/likestbot/handlers/users/likeHandler.py", line 11, in like_upper
+    member = await info.get_chat_member(chat_id =CHANNELS[0], user_id=call.from_user.id)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/bot.py", line 2550, in get_chat_member
+    result = await self.request(api.Methods.GET_CHAT_MEMBER, payload)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ServerDisconnectedError: Server disconnected
+dispatcher.py [LINE:390] #ERROR    [2022-12-12 22:03:32,311]  Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/bot/api.py", line 128, in check_result
+    raise exceptions.TelegramAPIError(description)
+aiogram.utils.exceptions.TelegramAPIError: Bad Gateway
+executor.py [LINE:362] #INFO     [2022-12-13 13:49:52,797]  Bot: Like Bot [@LikestBot]
+dispatcher.py [LINE:358] #INFO     [2022-12-13 13:49:53,036]  Start polling.
+executor.py [LINE:362] #INFO     [2022-12-13 14:00:13,542]  Bot: Like Bot [@LikestBot]
+dispatcher.py [LINE:358] #INFO     [2022-12-13 14:00:13,872]  Start polling.
+executor.py [LINE:362] #INFO     [2022-12-13 15:20:00,371]  Bot: Like Bot [@LikestBot]
+dispatcher.py [LINE:358] #INFO     [2022-12-13 15:20:00,615]  Start polling.

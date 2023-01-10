@@ -1,15 +1,15 @@
 from aiogram import types
 
-from loader import dp
+from loader import dp, db
 from keyboards.inline.simpleKeyboard import simple_inline
-from utils.db_api.dbxl import get_like, get_photo, get_caption
 
 @dp.inline_handler()
 async def share(query: types.InlineQuery):
     unique_id = query.query
-    photo_id = get_photo(unique_id)
-    likes = get_like(unique_id) 
-    caption = get_caption(unique_id)
+    post = db.get_post(unique_id)
+    photo_id = post[1]
+    likes = post[4]
+    caption = post(3)
     if likes == 0:
         likes = ''
         
